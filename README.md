@@ -54,7 +54,7 @@ Make
 - Go to /usr/local/zed/sample/positionaltracking/build and run following commands: 
 
 ```
-./ext,sh
+./ext.sh
 python3 do.py
 ```
 
