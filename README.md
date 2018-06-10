@@ -41,7 +41,7 @@ cmake ..
 Make
 ```
 ## Making Training Data from the Videos
-- You can download our svo files from [this link](https://cloud.iitmandi.ac.in/d/5a57cb95aa/). 
+- You can download our svo files from these links [1](https://cloud.iitmandi.ac.in/d/f05c0fd62b/)[2](https://cloud.iitmandi.ac.in/d/749976caa4/)[3](https://cloud.iitmandi.ac.in/d/39c9af63fc/). 
 
 - Put the input svo files in the /mnt/grounddata/ and rename the files as x.svo where x is the two-digit number starting from 00 up to number of total svo files. 
 
