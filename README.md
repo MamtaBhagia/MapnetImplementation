@@ -76,7 +76,9 @@ Our re-trained models can be downloaded from [here](https://cloud.iitmandi.ac.in
 
 To create symlinks between your 7Scenes directory and where the code looks for the 7Scenes data use this: 
 
+```
 cd data/deepslam_data && ln -s 7SCENES_DIR 7Scenes
+```
 
 Please go to the scripts folder to run the code. 
 
