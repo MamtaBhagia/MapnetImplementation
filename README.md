@@ -1,10 +1,10 @@
-#Geometry-Aware Learning of Maps for Camera Localization - Implementation
+# Geometry-Aware Learning of Maps for Camera Localization - Implementation
 
 Our work is based on the model Mapnet by NVLabs. Here is our implementation of their model on our data. You can find their documentation and code here: 
 - [Documentation]().
 - Code 
 
-#Set Up
+# Set Up
 - Git clone the NVlabs repository: https://github.com/NVlabs/geomapnet.git 
 
 - Install miniconda with Python 2.7 
@@ -15,11 +15,11 @@ Our work is based on the model Mapnet by NVLabs. Here is our implementation of t
 
 At this point, when you try to run the code you might face an error related to mk_lapack library not found. To fix this add miniconda's env lib to your LD_LIBRARY_PATH. 
 
-#Data
+# Data
 
 NVLabs has shown their work on the data 7Scenes and the RobotCar dataset. We have created our own data of an indoor room, here at IIT Mandi using ZED.
 
-##ZED Installation
+## ZED Installation
 - Download Zed SDK from the below link according to the specifications of your machine: Link 
 
 - Zed is by default installed in /usr/local directory. 
@@ -40,7 +40,7 @@ cd build
 cmake ..
 Make
 ```
-##Making Training Data from the Videos
+## Making Training Data from the Videos
 - You can download our svo files from this link. 
 
 - Put the input svo files in the /mnt/grounddata/ and rename the files as x.svo where x is the two-digit number starting from 00 up to number of total svo files. 
@@ -66,7 +66,7 @@ python3 do.py
 
 - Put the test sequence from ~/grounddata/ to ~/geomapnet/7Scenes/heads/seq-01.
 
-#Running the Code
+# Running the Code
 
 The downloaded models are to be stored in geomapnet/scripts/logs. 
 
@@ -97,7 +97,7 @@ $ python eval.py --dataset 7Scenes --scene heads --model mapnet \
 --config_file configs/mapnet.ini --val 
 ```
 
-#Training
+# Training
 
 Before training on any dataset, you must run the code dataset_mean.py. For the dataset 7Scenes and the scene heads, the command is: 
 
